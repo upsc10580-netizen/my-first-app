@@ -86,7 +86,36 @@
         <h3>UPPSC Preparation</h3>
         <p>Complete syllabus, notes & quiz available.</p>
     </div>
+<hr>
 
+<h2>UPPSC Quiz</h2>
+
+<p><b>Question:</b> Uttar Pradesh ki rajdhani kya hai?</p>
+
+<input type="radio" name="q1" value="a"> Agra<br>
+<input type="radio" name="q1" value="b"> Lucknow<br>
+<input type="radio" name="q1" value="c"> Varanasi<br><br>
+
+<button onclick="checkAnswer()" class="btn">Submit Answer</button>
+
+<p id="result"></p>
+
+<script>
+function checkAnswer() {
+    var options = document.getElementsByName("q1");
+    var answer = "";
+    for(var i = 0; i < options.length; i++){
+        if(options[i].checked){
+            answer = options[i].value;
+        }
+    }
+    if(answer == "b"){
+        document.getElementById("result").innerHTML = "✅ Correct Answer!";
+    } else {
+        document.getElementById("result").innerHTML = "❌ Wrong Answer!";
+    }
+}
+    </script>
 </section>
 
 <footer>
