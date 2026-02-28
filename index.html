@@ -4,36 +4,45 @@
     <title>Shiksha IAS Pathshala</title>
     <style>
         body {
-            font-family: Arial;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            font-family: Arial;
+            background-color: #f4f6f9;
         }
         header {
-            background: #0d47a1;
+            background: linear-gradient(to right, #0d47a1, #1976d2);
             color: white;
-            padding: 15px;
+            padding: 40px;
             text-align: center;
         }
         nav {
             background: #1565c0;
-            padding: 10px;
+            padding: 15px;
             text-align: center;
         }
         nav a {
             color: white;
-            margin: 10px;
+            margin: 15px;
             text-decoration: none;
             font-weight: bold;
         }
         section {
+            padding: 30px;
+            text-align: center;
+        }
+        .card {
+            background: white;
             padding: 20px;
+            margin: 20px;
+            display: inline-block;
+            width: 250px;
+            box-shadow: 0px 4px 8px gray;
+            border-radius: 10px;
         }
         footer {
             background: #0d47a1;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 15px;
         }
         .btn {
             background: #ff9800;
@@ -41,6 +50,7 @@
             color: white;
             border: none;
             cursor: pointer;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -48,25 +58,40 @@
 
 <header>
     <h1>Shiksha IAS Pathshala</h1>
-    <p>UPSC & UPPSC Coaching Platform</p>
+    <p>Complete UPSC & UPPSC Preparation Platform</p>
+    <button class="btn">Join Now</button>
 </header>
 
 <nav>
     <a href="#">Home</a>
     <a href="#">Courses</a>
     <a href="#">Quiz</a>
-    <a href="#">Contact</a>
+    <a href="#">About UP</a>
 </nav>
 
 <section>
-    <h2>Welcome Students</h2>
-    <p>Yah website UPSC aur UPPSC preparation ke liye banayi gayi hai.</p>
-    <button class="btn">Start Learning</button>
+    <h2>Uttar Pradesh Special</h2>
+
+    <div class="card">
+        <h3>Taj Mahal</h3>
+        <p>Agra me sthit vishva prasiddh smarak.</p>
+    </div>
+
+    <div class="card">
+        <h3>Kashi Vishwanath</h3>
+        <p>Varanasi me sthit prasiddh Shiv mandir.</p>
+    </div>
+
+    <div class="card">
+        <h3>UPPSC Preparation</h3>
+        <p>Complete syllabus, notes & quiz available.</p>
+    </div>
+
 </section>
 
 <footer>
-    <p>© 2026 Shiksha IAS Pathshala | Powered by Raghav Kumar</p>
+    <p>© 2026 Shiksha IAS Pathshala | Developed by Raghav Kumar</p>
 </footer>
 
 </body>
-  </html>
+</html>
